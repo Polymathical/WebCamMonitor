@@ -1,0 +1,32 @@
+﻿body
+{
+	background-color: Black;
+	color: White;
+}
+
+.content
+{
+}
+
+.camera
+{
+	float: left;
+	padding-left: 10px;
+}
+
+.cameraImage
+{
+/*	width: 320px;
+	height: 240px;*/
+}
+
+.cameraInfo
+{
+	text-align: center;
+}
+
+.header
+{
+	 
+	 
+}

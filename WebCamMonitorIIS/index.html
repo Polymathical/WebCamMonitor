@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <title>WebCam Monitor</title>
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js">
+    </script>
+    <script type="text/javascript" src="scripts/cam-scripts.js">
+    </script>
+    <script type="text/javascript">
+        lolAuth();
+        setInterval('reloadImage("camera1", loaded1)', 500);
+        setInterval('reloadImage("camera2", loaded2)', 525);
+        setInterval('reloadImage("camera3", loaded1)', 550);
+        setInterval('reloadImage("camera4", loaded2)', 575);
+        setInterval('reloadImage("camera5", loaded1)', 600);
+        setInterval('reloadImage("camera6", loaded2)', 625);
+
+        $("#camera1").load(load);
+        $("#camera2").load(load);
+        $("#camera3").load(load);
+        $("#camera4").load(load);
+        $("#camera5").load(load);
+        $("#camera6").load(load);
+
+        $("#camera1").error(load);
+        $("#camera2").error(load);
+        $("#camera3").error(load);
+        $("#camera4").error(load);
+        $("#camera5").error(load);
+        $("#camera6").error(load);
+    </script>
+    <link rel="Stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+    <script type="text/javascript">
+        if (navigator.userAgent.indexOf('iPhone') != -1)
+        {
+            // iphone code
+        }
+    </script>
+    <div style="display: none;">
+        <img class="cameraImage" id="cam1other" name="cam1other" />
+        <img class="cameraImage" style="display: none;" id="cam2other" name="cam2other" />
+    </div>
+    <div class="content">
+        <div class="header">
+            <span>WebCam Monitor</span>
+        </div>
+        <br />
+        <div class="camera">
+            <img class="cameraImage" src="images/Camera1.jpg" id="camera1" name="cam1" alt="camera 1" />
+            <br />
+            <span class="cameraInfo">Camera 1</span>
+        </div>
+        <div class="camera">
+            <img class="cameraImage" src="images/Camera2.jpg" id="camera2" name="cam2" alt="camera 2" />
+            <br />
+            <span class="cameraInfo">Camera 2</span>
+        </div>
+        <div class="camera">
+            <img class="cameraImage" src="images/Camera3.jpg" id="camera3" name="cam1" alt="camera 3" />
+            <br />
+            <span class="cameraInfo">Camera 3</span>
+        </div>
+        <div class="camera">
+            <img class="cameraImage" src="images/Camera4.jpg" id="camera4" name="cam2" alt="camera 4" />
+            <br />
+            <span class="cameraInfo">Camera 4</span>
+        </div>
+        <div class="camera">
+            <img class="cameraImage" src="images/Camera5.jpg" id="camera5" name="cam1" alt="camera 5" />
+            <br />
+            <span class="cameraInfo">Camera 5</span>
+        </div>
+        <div class="camera">
+            <img class="cameraImage" src="images/Camera6.jpg" id="camera6" name="cam2" alt="camera 6" />
+            <br />
+            <span class="cameraInfo">Camera 6</span>
+        </div>
+    </div>
+</body>
+</html>
